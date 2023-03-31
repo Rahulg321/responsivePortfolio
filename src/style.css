@@ -3,7 +3,6 @@ body {
 }
 
 section {
-    height: 500px;
     background-color: white;
     border: 2px solid black;
 }
@@ -18,8 +17,10 @@ section {
 }
 
 footer {
-    height: 500px;
+    color:white;
+    padding:80px;
     background-color: black;
+    text-align: center;
 }
 
 nav {
@@ -35,6 +36,12 @@ ul {
     font-size: 30px;
 }
 
+
+ul.show {
+    display: block;
+}
+
+
 li {
     /* width: 200px; */
     text-decoration: none;
@@ -45,9 +52,13 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 50px;
+}
+
 p {
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
 }
 
@@ -86,17 +97,120 @@ p {
 
 
 .socials {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 200px;
+    padding-right: 18px;
 }
 
 .logo {
     height: 80px;
     margin: 10px;
-    padding: 2px;
-    color: white;
 }
 
 
 .social {
-    margin: 20px;
+    margin: 15px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+/*.information {
+    border: 2px solid black;
+}*/
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px;
+}
+
+
+@media only screen and (max-width: 1000px)
+{
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+.project-container {
+    display:flex;
+    justify-content: space-around;
+
+}
+
+.project-card {
+    width:350px;
+    height:500px;
+    box-shadow: 5px 5px 20px grey;
+    margin-bottom: 20px;
+}
+
+
+.product-image {
+    width:320px;
+    height:220px;
+}
+
+.subtext {
+    margin:10px 10px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.subtext a {
+    color:#808080;
+}
+
+hr {
+    margin: 5px 30px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline:0;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .hamburger {
+        display: block;
+        border:0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+    }
+
+    ul {
+        display: none;
+    }
 }
